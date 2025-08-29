@@ -1,11 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assignment 5</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
-<body>
-    
+
+<body class="bg-gray-100 min-h-screen">
+    <!-- navbar -->
+     <div class="border-2 h-[50px] flex justify-between items-center p-8">
+        <div class="nav-left  w-[200px] h-[50px] flex gap-3">
+            <div>
+                <img class="w-[50px] h-[50px]" src="./assets/logo.png" alt="">
+            </div>
+            <div>
+                <h2 class="font-[800] text-[#006747]">Emergency <br>Service</h2>
+            </div>
+        </div>
+        <div class="nav-right  w-[250px] h-[50px] flex gap-4 items-center">
+            <!-- heart  -->
+
+            <div class="heart w-[70px] h-[45px] flex items-center gap-1 bg-[#41ff6b1a] rounded-2xl p-3">
+                <span id="heartCount" class="font-semibold text-lg">0</span>
+                <img class="w-[40px] h-[30px]" src="./assets/heart.png" alt="">
+            </div>
+
+            <!-- coin -->
+
+            <div class="coin w-[70px] h-[45px] flex items-center gap-1 bg-[#41ff6b1a] rounded-2xl p-3">
+                <span id="coinCount" class="font-semibold text-lg">0</span>
+                <img class="w-[30px] h-[30px]" src="./assets/coin.png" alt="">
+            </div>
+
+            <!-- copy -->
+
+            <div class="copy w-[100px] h-[35px] flex items-center gap-1 bg-[#00a63e] rounded-3xl p-3 ml-4">
+                <span id="copyCount" class="font-semibold text-lg">0</span>
+                <p class="copy-text ">Copy</p>
+            </div>
+        </div>
+     </div>
 </body>
+
 </html>
